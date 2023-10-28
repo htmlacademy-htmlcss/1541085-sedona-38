@@ -3,13 +3,14 @@
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link rel="stylesheet" type="text/css" href="styles/styles.css">
   </head>
   <body>
     <header class="page-header header">
       <nav class="navigation">
 
         <a class="logo" href="">
-          <img class="logo-image" src="images/logo.svg" width="138" alt="Логотип сайта Седона»">
+          <img class="logo-image" src="images/logo.svg" width="140" alt="Логотип сайта Седона»">
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
@@ -35,9 +36,7 @@
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="#">
-              <span class="visually-hidden">Бронь гостинницы</span>
-            </a>
+            <a class="navigation-link want-here"href="#">ХОЧУ СЮДА!</a>
           </li>
         </ul>
 
@@ -48,12 +47,15 @@
       <h1 class="visually-hidden">Туристический городок Седона</h1>
       <section class="hero">
         <img src="images/welcome.svg" width="458" alt="Welcome to the gorgeous sedona because the grand canyon sucks">
-        <h2 class="hero-big">Седона — небольшой городок в Аризоне,
-заслуживающий большего!</h2>
-        <p class="hero-small">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
       </section>
 
       <section class="advantages">
+        <div class="title">
+          <h3 class="title-big">Седона — небольшой городок в Аризоне,
+          заслуживающий большего!</h3>
+          <p class="title-small">Рассмотрим причины, по которым Седона круче, чем Гранд-Каньон!</p>
+        </div>
         <h2 class="visually-hidden">Преимущества</h2>
         <ul class="advantages-list">
           <li class="advantages-item">
@@ -79,7 +81,6 @@
             <img class="advantages-image" src="images/canyon.jpg" width="800" alt="Изображение моста дьявола">
           </li>
         </ul>
-      </section>
 
       <div class="title">
         <h2 class="title-big">Приезжайте в Седону отдохнуть в комфорте и уюте!</h2>
@@ -88,32 +89,30 @@
 
       <ul class="advantages-list comfort">
         <li class="comfort-item">
-          <h3 class="comfort-title">Жильё</h3>
-          <p class="comfort-description">Рекомендуем пожить в настоящем мотеле,
+          <h3 class="advantages-title">Жильё</h3>
+          <p class="advantages-description">Рекомендуем пожить в настоящем мотеле,
 всё как в кино!</p>
-          <img src="images/house_icon.svg" width="75" alt="">
         </li>
         <li class="comfort-item">
-          <h3 class="comfort-title">Еда</h3>
-          <p class="comfort-description">Всегда заказывайте
+          <h3 class="advantages-title">Еда</h3>
+          <p class="advantages-description">Всегда заказывайте
 топовый фирменный бургер, вы не разочаруетесь!</p>
-          <img src="images/food_icon.svg" width="75" alt="">
         </li>
         <li class="comfort-item">
-          <h3 class="comfort-title">Сувениры</h3>
-          <p class="comfort-description">Не только китайского,
+          <h3 class="advantages-title">Сувениры</h3>
+          <p class="advantages-description">Не только китайского,
 но и настоящего местного производства!</p>
-          <img src="images/souvenirs_icon.svg" width="75" alt="">
         </li>
       </ul>
 
       <div class="search">
-        <h2 class="search-big">Заинтересовались?</h2>
-        <p class="search-small">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
+        <h2 class="title-big">Заинтересовались?</h2>
+        <p class="title-small">Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
         <button type="submit" class="button">ПОИСК ГОСТИНИЦЫ В седоне</button>
       </div>
+      </section>
 
-      <div class="title search">
+      <div class="title-search">
         <h2 class="title-big">Подпишитесь на рассылку</h2>
         <p class="title-small">Только полезная информация и никакого спама, честное бойскаутское!</p>
         <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
