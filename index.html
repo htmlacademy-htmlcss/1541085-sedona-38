@@ -15,29 +15,36 @@
         </a>
         <ul class="navigation-list">
           <li class="navigation-item">
-            <a class="navigation-link current" href="#">Главная</a>
+            <a class="navigation-link current" href="index.html">Главная</a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">О Седоне</a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link" href="catalog.html">Гостинницы</a>
+            <a class="navigation-link" href="catalog.html">Гостиницы</a>
           </li>
         </ul>
 
         <ul class="navigation-list navigation-user">
           <li class="navigation-item">
             <a class="navigation-link" href="#">
+              <svg class="icon icon-search" aria-hidden="true" focusable="false" width="19" height="19" viewBox="0 0 19 19" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="m18.5 17-3.7-3.67c1-1.3 1.7-2.98 1.7-4.87A8 8 0 0 0 8.5.5C4.1.5.5 4.18.5 8.56a8 8 0 0 0 12.9 6.26l3.7 3.68 1.4-1.5Zm-10-2.48a6 6 0 0 1-6-5.96 6 6 0 0 1 12 0 6 6 0 0 1-6 5.96Z" fill="#000"/>
+              </svg>
               <span class="visually-hidden">Поиск</span>
             </a>
           </li>
           <li class="navigation-item">
             <a class="navigation-link" href="#">
+              <svg class="icon icon-favorite" aria-hidden="true" focusable="false" width="18" height="17" viewBox="0 0 18 17" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M8.9 17a.9.9 0 0 1-.8-.4c-5.4-6.1-6.7-7.5-7-7.9A5.4 5.4 0 0 1 5.5 0C6.8 0 8 .5 9 1.3a5.46 5.46 0 0 1 9 4.1c0 1.3-.5 2.5-1.3 3.4l-7 7.9c-.2.2-.4.3-.8.3Zm-6-9.5c.3.4 3.5 4 6.1 6.9l6.2-7c.5-.5.7-1.2.7-2 0-1.8-1.5-3.3-3.3-3.3-1 0-2 .5-2.7 1.3-.3.3-.6.4-.9.4-.3 0-.6-.2-.8-.4-.7-.8-1.7-1.3-2.7-1.3-1.8 0-3.3 1.5-3.3 3.3-.1.9.3 1.6.7 2.1-.1 0-.1 0 0 0Z" fill="#000"/></svg>
               <span class="visually-hidden">Избранное</span>
+              <span class="natification-badge">12</span>
             </a>
           </li>
           <li class="navigation-item">
-            <a class="navigation-link want-here"href="#">ХОЧУ СЮДА!</a>
+            <a class="navigation-link"href="#">
+              <span class="want-here">ХОЧУ СЮДА!</span>
+            </a>
           </li>
         </ul>
 
@@ -48,6 +55,7 @@
       <h1 class="visually-hidden">Туристический городок Седона</h1>
       <section class="hero">
         <img src="images/welcome.svg" width="458" alt="Welcome to the gorgeous sedona because the grand canyon sucks">
+        <img class="mountains-cover" src="images/mountains_cover.svg">
         <h2 class="visually-hidden">Добро пожаловать в Седону</h2>
       </section>
 
@@ -74,19 +82,19 @@
           </li>
           <li class="advantages-item">
             <div class="advantages-item-container">
-              <h3 class="advantages-title">Красивая дорога</h3>
+              <h3 class="advantages-title">Красивая<br> дорога</h3>
               <p class="advantages-description">Ехать в Седону из Лас-Вегаса совсем не скучно!</p>
             </div>
           </li>
           <li class="advantages-item">
             <div class="advantages-item-container">
-              <h3 class="advantages-title">Мало туристов</h3>
+              <h3 class="advantages-title">Мало<br> туристов</h3>
               <p class="advantages-description">Большинство едет в Гранд Каньон и толпится там</p>
             </div>
           </li>
           <li class="advantages-item">
             <div class="advantages-item-container">
-              <h3 class="advantages-title">Там есть мост дьявола</h3>
+              <h3 class="advantages-title">Там есть<br> мост дьявола</h3>
               <p class="advantages-description">Да, по нему можно пройти! Если вы осмелитесь, разумеется</p>
             </div>
             <img class="advantages-image" src="images/canyon.jpg" width="800" alt="Изображение моста дьявола">
@@ -106,12 +114,12 @@
           </li>
           <li class="comfort-item">
             <h3 class="advantages-title">Еда</h3>
-            <p class="advantages-description">Всегда заказывайте
+            <p class="advantages-description">Всегда заказывайте<br>
   топовый фирменный бургер, вы не разочаруетесь!</p>
           </li>
           <li class="comfort-item">
             <h3 class="advantages-title">Сувениры</h3>
-            <p class="advantages-description">Не только китайского,
+            <p class="advantages-description">Не только китайского,<br>
   но и настоящего местного производства!</p>
           </li>
         </ul>
@@ -127,10 +135,10 @@
           <h2 class="title-big">Подпишитесь на рассылку</h2>
           <p class="title-small">Только полезная информация и никакого спама, честное бойскаутское!</p>
           <form class="search-form" action="https://echo.htmlacademy.ru/" method="post">
-          <input class="field" placeholder="Ваш e-mail" type="email" name="search-email" required>
-          <button class="button search-button" type="submit">Подписаться</button>
+            <input class="field" placeholder="Ваш e-mail" type="email" name="search-email" required>
+            <button class="button search-button" type="submit">Подписаться</button>
           </form>
-      </div>
+        </div>
     </main>
 
     <footer class="page-footer">
@@ -139,17 +147,17 @@
           <ul class="footer-social-list">
             <li class="footer-social-item">
               <a class="button" href="https://vk.com/htmlacademy">
-                <img src="images/vk_icon.svg" width="24" alt="Ссылка Вконтакте">
+                <img src="images/vk_icon.svg" width="26" height="15" alt="Ссылка Вконтакте">
               </a>
             </li>
             <li class="footer-social-item">
               <a class="button" href="https://t.me/htmlacademy">
-                <img src="images/telegram_icon.svg" width="18" alt="Ссылка Телеграм">
+                <img src="images/telegram_icon.svg" width="18" height="16" alt="Ссылка Телеграм">
               </a>
             </li>
             <li class="footer-social-item">
               <a class="button" href="https://www.youtube.com/user/htmlacademyru">
-                <img src="images/youtube_icon.svg" width="22" alt="Ссылка Ютуб">
+                <img src="images/youtube_icon.svg" width="23" height="17" alt="Ссылка Ютуб">
               </a>
             </li>
           </ul>
