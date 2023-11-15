@@ -323,43 +323,41 @@
       </div>
     </footer>
     </div>
-    <div class="modal-container modal-container-close">
+    <div class="modal-container">
       <div class="modal-window">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
         </button>
         <section class="modal-content">
           <h2 class="modal-title">Поиск гостиницы в седоне</h2>
-          <form>
-            <fieldset>
-              <ul>
-                <li>
-                  <label>
-                    <span></span>
-                    <input type="" name="">
+          <form class="modal-form">
+            <fieldset class="modal-group">
+              <ul class="modal-list">
+                <li class="modal-item">
+                  <label class="check-in">
+                    <span>Дата Заезда:</span>
+                    <input class="check-in-input" value="27 апреля 2020" type="" name="">
                   </label>
                 </li>
-                <li>
-                  <label>
-                    <span></span>
-                    <input type="" name="">
+                <li class="modal-item">
+                  <label class="check-out">
+                    <span>Дата Выезда:</span>
+                    <input class="check-out-input" value="1 сентября 2023" type="" name="">
                   </label>
                 </li>
-                <li>
-                  <ul>
-                    <li>
-                      <label>
-                        <span></span>
-                        <input type="" name="">
-                      </label>
-                    </li>
-                    <li>
-                      <label>
-                        <span></span>
-                        <input type="" name="">
-                      </label>
-                    </li>
-                  </ul>
+              </ul>
+              <ul class="modal-age">
+                <li class="modal-item">
+                  <label class="adults-amount">
+                    <span>Взрослые:</span>
+                    <input value="2" type="" name="">
+                  </label>
+                </li>
+                <li class="modal-item">
+                  <label class="children-amount">
+                    <span>Дети:</span>
+                    <input value="2" type="" name="">
+                  </label>
                 </li>
               </ul>
             </fieldset>
