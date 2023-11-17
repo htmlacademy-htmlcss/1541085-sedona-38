@@ -1089,17 +1089,18 @@ fieldset {
   width: 577px;
   margin: auto;
   padding: 64px 70px;
-  border-radius: 6%;
+  border-radius: 5%;
   background-color: #fff;
+  box-shadow: 0px 0px 40px 20px rgba(128, 128, 128, 0.2);
 }
 
 .modal-close-button {
   position: absolute;
   padding: 0;
-  top: 0;
-  right: 0;
-  width: 56px;
-  height: 54px;
+  top: 66px;
+  right: 51px;
+  width: 52px;
+  height: 52px;
   background-color: #f2f2f2;
   border: none;
   border-radius: 50%;
@@ -1119,7 +1120,8 @@ fieldset {
   line-height: 36px;
   text-transform: uppercase;
   margin: 0;
-  margin-bottom: 64px;
+  margin-top: 2px;
+  margin-bottom: 66px;
   padding: 0;
 }
 
@@ -1146,9 +1148,9 @@ fieldset {
 
 .modal-age {
   display: flex;
-  justify-content: space-between;
   width: 100%;
   margin: 0;
+  margin-bottom: 48px;
   padding: 0;
   list-style: none;
 }
@@ -1159,23 +1161,21 @@ fieldset {
   align-items: center;
 }
 
-.modal-window span {
-  font-size: 20px;
-  line-height: 24px;
-  font-weight: 700;
-  margin-right: auto;
-}
-
-.modal-age span {
+.amount-title {
   margin-right: 44px;
 }
 
+.modal-age .modal-item:first-child {
+  margin-right: 88px;
+}
+
 .modal-list input {
-  width: 397px;
+  width: 437px;
   padding: 12px 20px;
   background-color: #f2f2f2;
-  border-radius: 4px;
+  border-radius: 5px;
   border: none;
+  text-align: left;
 }
 
 .modal-age input {
@@ -1187,11 +1187,181 @@ fieldset {
   box-sizing: border-box;
 }
 
-.modal-group input {
+.check-in-input,
+.check-out-input,
+.adults-amount-input,
+.children-amount-input {
   font-size: 18px;
   line-height: 24px;
   font-weight: 700;
 }
 
+.check-in,
+.check-out {
+  display: flex;
+  position: relative;
+  text-align: left;
+}
+
+.check-in:after,
+.check-out:after {
+  position: absolute;
+  display: block;
+  content: "";
+  width: 20px;
+  height: 20px;
+  background-color: #f2f2f2;
+  background-image: url("../images/calendar.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  top: 13px;
+  right: 18px;
+}
+
+.check-in-title,
+.check-out-title,
+.adults-amount-title,
+.children-amount-title {
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+}
+
+.check-out-input {
+  margin-left: 17px;
+  appearance: none;
+}
+
+.check-in-input {
+  margin-left: 23px;
+  appearance: none;
+}
+
+.alert {
+  position: absolute;
+  display: block;
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 400;
+  top: 52px;
+  left: 155px;
+}
+
+.input-alert {
+  color: red;
+}
+
+.modal-submit-button {
+  display: block;
+  padding: 18px 254px;
+  background-color: #83b3d3;
+  font-size: 20px;
+  line-height: 24px;
+  font-weight: 700;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  margin: 0 auto;
+  text-transform: uppercase;
+}
+
+.adults-amount-label {
+  position: relative;
+}
+
+.children-amount-label {
+  position: relative;
+}
+
+.adults-amount-label .inner-spin-button,
+.children-amount-label .inner-spin-button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/plus.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  border: none;
+  cursor: pointer;
+  right: 0;
+}
+
+.adults-amount-label .outer-spin-button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/minus.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  border: none;
+  cursor: pointer;
+  left: 136px;
+}
+
+.children-amount-label .outer-spin-button {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+  background-image: url("../images/minus.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 20px;
+  border: none;
+  cursor: pointer;
+  left: 130px;
+}
+
+.children-amount-title {
+  margin-right: 46px;
+}
+
+.children-amount-title:after {
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  font-weight: 400;
+  content: "i";
+  text-align: center;
+  background-color: #83b3d3;
+  background-position: center;
+  color: white;
+  border-radius: 50%;
+  margin-left: 10px;
+}
+
+.children-amount-title::before {
+  position: absolute;
+  width: 255px;
+  height: auto;
+  top: 50px;
+  left: -55px;
+  content: "Укажите количество детей, которые будут с вами, возраст которых от 6 до 18 лет. Дети до 6 лет размещаются бесплатно.";
+  text-align: start;
+  background-color: #333;
+  background-position: center;
+  color: white;
+  border-radius: 10px;
+  padding: 20px 20px 25px;
+  font-size: 16px;
+  line-height: 20px;
+  font-weight: 400;
+  box-sizing: border-box;
+  box-shadow: 0 10px 20px 5px rgba(0, 0, 0, 0.2);
+}
+
+.triangle {
+  position: absolute;
+  width: 19px;
+  height: 9px;
+  top: 41px;
+  left: 62px;
+  content: "";
+  background-image: url("../images/triangle.svg");
+  background-position: center;
+  background-color: white;
+  border: none;
+}
 
 modal-container-close

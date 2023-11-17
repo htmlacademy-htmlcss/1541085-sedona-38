@@ -4,6 +4,8 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Гостинницы Седоны</title>
+  <link rel="icon" href="favicon.ico">
+  <link rel="icon" type="image/png" href="images/favicon.png">
   <link rel="stylesheet" type="text/css" href="styles/styles.css">
 </head>
 <body>
@@ -323,7 +325,7 @@
       </div>
     </footer>
     </div>
-    <div class="modal-container modal-container-close">
+    <div class="modal-container ">
       <div class="modal-window">
         <button class="modal-close-button">
           <span class="visually-hidden">Закрыть</span>
@@ -335,33 +337,39 @@
               <ul class="modal-list">
                 <li class="modal-item">
                   <label class="check-in">
-                    <span>Дата Заезда:</span>
-                    <input class="check-in-input" value="27 апреля 2020" type="" name="">
+                    <span class="check-in-title">Дата Заезда:</span>
+                    <input class="check-in-input" value="27 апреля 2020" type="submit" name="check-in-date">
+                    <span class="input-alert alert">Мы не можем отправить вас в прошлое.</span>
                   </label>
                 </li>
                 <li class="modal-item">
                   <label class="check-out">
-                    <span>Дата Выезда:</span>
-                    <input class="check-out-input" value="1 сентября 2023" type="" name="">
+                    <span class="check-out-title">Дата Выезда:</span>
+                    <input class="check-out-input" value="1 сентября 2023" type="submit" name="check-out-date">
+                    <span class="output-alert alert">На эти даты есть свободные номера. Пока есть.</span>
                   </label>
                 </li>
               </ul>
               <ul class="modal-age">
                 <li class="modal-item">
-                  <label class="adults-amount">
-                    <span>Взрослые:</span>
-                    <input value="2" type="" name="">
+                  <label class="adults-amount-label">
+                    <span class="adults-amount-title amount-title">Взрослые:</span>
+                    <button class="outer-spin-button"></button>
+                    <input class="adults-amount-input" value="2" type="submit" name="adults-amount">
+                    <button class="inner-spin-button"></button>
                   </label>
                 </li>
                 <li class="modal-item">
-                  <label class="children-amount">
-                    <span>Дети:</span>
-                    <input value="2" type="" name="">
+                  <label class="children-amount-label">
+                    <span class="children-amount-title amount-title">Дети:<div class="triangle"></div></span>
+                    <button class="outer-spin-button"></button>
+                    <input class="children-amount-input" value="2" type="submit" name="children-amount">
+                    <button class="inner-spin-button"></button>
                   </label>
                 </li>
               </ul>
             </fieldset>
-            <button class="modal-button"></button>
+            <button class="modal-submit-button">Найти</button>
           </form>
         </section>
        </div>
