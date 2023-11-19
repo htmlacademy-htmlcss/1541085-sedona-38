@@ -59,7 +59,7 @@ body {
 
 /*Навигация*/
 
-header {
+.header {
   margin: 0;
 }
 
@@ -1589,5 +1589,3 @@ fieldset {
   background-color: #83b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
-
-modal-container-close
