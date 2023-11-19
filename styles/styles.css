@@ -1412,13 +1412,18 @@ fieldset {
   font-weight: 700;
 }
 
+.check-in-title,
+.check-out-title {
+  width: 119px;
+}
+
 .check-out-input {
   margin-left: 17px;
   appearance: none;
 }
 
 .check-in-input {
-  margin-left: 23px;
+  margin-left: 16px;
   appearance: none;
 }
 
