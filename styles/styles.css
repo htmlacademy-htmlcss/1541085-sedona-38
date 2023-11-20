@@ -540,7 +540,7 @@ body {
 }
 
 .page-footer {
-  padding: 36px 70px 30px 70px;
+  padding: 39px 70px 30px 70px;
 }
 
 .footer-social-list {
@@ -1208,12 +1208,12 @@ fieldset {
   background-color: #fff;
 }
 
-.pagination-link:hover:not(.pagination-dot),
-.pagination-link:focus:not(.pagination-dot) {
+.pagination-link:hover:not(.pagination-dot):not(.pagination-current),
+.pagination-link:focus:not(.pagination-dot):not(.pagination-current) {
   background-color: #68a2ca;
 }
 
-.pagination-link:active:not(.pagination-dot) {
+.pagination-link:active:not(.pagination-dot):not(.pagination-current) {
   background-color: #83b3d3;
   color: rgba(255, 255, 255, 0.3);
 }
@@ -1349,7 +1349,7 @@ fieldset {
 }
 
 .modal-list input {
-  width: 437px;
+  width: 397px;
   padding: 12px 20px;
   background-color: #f2f2f2;
   border-radius: 5px;
@@ -1455,16 +1455,18 @@ fieldset {
   text-transform: uppercase;
 }
 
-.adults-amount-label {
-  position: relative;
-}
-
+.adults-amount-label,
 .children-amount-label {
   position: relative;
 }
 
-.adults-amount-label .inner-spin-button,
-.children-amount-label .inner-spin-button {
+.adults-amount-buttons,
+.children-amount-buttons {
+  position: relative;
+}
+
+.adults-amount-buttons .inner-spin-button,
+.children-amount-buttons .inner-spin-button {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -1475,9 +1477,10 @@ fieldset {
   border: none;
   cursor: pointer;
   right: 0;
+  bottom: 5px;
 }
 
-.adults-amount-label .outer-spin-button {
+.adults-amount-buttons .outer-spin-button {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -1488,9 +1491,10 @@ fieldset {
   border: none;
   cursor: pointer;
   left: 136px;
+  bottom: 5px;
 }
 
-.children-amount-label .outer-spin-button {
+.children-amount-buttons .outer-spin-button {
   position: absolute;
   width: 40px;
   height: 40px;
@@ -1501,6 +1505,7 @@ fieldset {
   border: none;
   cursor: pointer;
   left: 130px;
+  bottom: 5px;
 }
 
 .children-amount-title {
@@ -1545,7 +1550,7 @@ fieldset {
   position: absolute;
   width: 19px;
   height: 9px;
-  top: 41px;
+  top: -6px;
   left: 62px;
   content: "";
   background-image: url("../images/triangle.svg");
